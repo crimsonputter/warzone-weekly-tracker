@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "game": "bo7wz",
+  "title": "Season 3 Week 1 — Warzone only",
+  "updatedAt": "2026-04-03",
+  "sourceNote": "Warzone table only, from Dot Esports: https://dotesports.com/call-of-duty/news/black-ops-7-warzone-season-3-week-1-challenges",
+  "masterCamos": [],
+  "weeklyChallenges": [
+    {
+      "id": "bo7wz-s3-w01-br-activities-15",
+      "title": "Black Ops Royale — complete activities",
+      "description": "Complete 15 activities in Black Ops Royale. Reward: 5,000 XP."
+    },
+    {
+      "id": "bo7wz-s3-w01-wz-elims-40",
+      "title": "Warzone — eliminations",
+      "description": "Get 40 eliminations. Reward: 5,000 XP."
+    },
+    {
+      "id": "bo7wz-s3-w01-br-grapple-200m",
+      "title": "Black Ops Royale — Grapple Hook distance",
+      "description": "Travel 200 meters with the Grapple Hook in Black Ops Royale. Reward: 3,500 XP."
+    },
+    {
+      "id": "bo7wz-s3-w01-br-cradle-crates-5",
+      "title": "Black Ops Royale — Cradle Breach crates",
+      "description": "Open 5 crates inside a Cradle Breach in a single match (Black Ops Royale). Reward: 3,500 XP."
+    },
+    {
+      "id": "bo7wz-s3-w01-br-exotic-elim-1",
+      "title": "Black Ops Royale — Exotic weapon kill",
+      "description": "Get 1 elimination with Exotic weapons in Black Ops Royale. Reward: 2,500 XP."
+    },
+    {
+      "id": "bo7wz-s3-w01-wz-longshot-3",
+      "title": "Warzone — Long Shot kills",
+      "description": "Get 3 Long Shot kills. Reward: 2,500 XP."
+    }
+  ],
+  "weapons": []
+}

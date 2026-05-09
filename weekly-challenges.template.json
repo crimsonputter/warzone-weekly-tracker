@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "game": "bo7wz",
+  "title": "BO7 Warzone — weekly challenges (template)",
+  "updatedAt": "2026-05-10",
+  "sourceNote": "Host this file (or merge these weeklyChallenges into your full manifest). ID scheme: bo7wz-s{season}-w{week}-{slug}. When a new week goes live, bump w## and use new ids so old completions stay tied to the correct week. Optional endsAt is ISO-8601 UTC for your own tracking.",
+  "masterCamos": [],
+  "weeklyChallenges": [
+    {
+      "id": "bo7wz-s1-w02-core-elims-assault",
+      "title": "Core — assault rifle eliminations",
+      "description": "Get 30 eliminations with assault rifles in Battle Royale or Resurgence (replace with real text from this week’s in-game menu).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-core-placements",
+      "title": "Core — top placements",
+      "description": "Finish in the top 10 three times (example).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-bonus-headshots",
+      "title": "Bonus — precision",
+      "description": "Get 15 headshot eliminations (example).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-bonus-contracts",
+      "title": "Bonus — contracts",
+      "description": "Complete 8 contracts (example).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-ltm-rotator",
+      "title": "LTM — featured mode",
+      "description": "Play 5 matches in the featured playlist (rename when the LTM changes).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-challenge-weapon-blueprint",
+      "title": "Weapon challenge — featured gun",
+      "description": "Get 20 eliminations with [weapon name] using [build restrictions if any] (fill in from weekly UI).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    }
+  ],
+  "weapons": []
+}
