@@ -1,52 +1,47 @@
 {
   "version": 1,
   "game": "bo7wz",
-  "title": "Season 3 Warzone weeklies (Weeks 1-6)",
-  "updatedAt": "2026-05-08",
-  "sourceNote": "Compiled from Dot Esports BO7/Warzone Season 3 weekly challenge guides (Weeks 1-6), Warzone sections only.",
+  "title": "BO7 Warzone — weekly challenges (template)",
+  "updatedAt": "2026-05-10",
+  "sourceNote": "Host this file (or merge these weeklyChallenges into your full manifest). ID scheme: bo7wz-s{season}-w{week}-{slug}. When a new week goes live, bump w## and use new ids so old completions stay tied to the correct week. Optional endsAt is ISO-8601 UTC for your own tracking.",
   "masterCamos": [],
   "weeklyChallenges": [
-    { "id": "bo7wz-s3-w01-br-activities-15", "title": "W1: Black Ops Royale — complete activities", "description": "Complete 15 activities in Black Ops Royale. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w01-wz-elims-40", "title": "W1: Warzone — eliminations", "description": "Get 40 eliminations. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w01-br-grapple-200m", "title": "W1: Black Ops Royale — Grapple Hook distance", "description": "Travel 200 meters with the Grapple Hook in Black Ops Royale. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w01-br-cradle-crates-5", "title": "W1: Black Ops Royale — Cradle Breach crates", "description": "Open 5 crates inside a Cradle Breach in a single match in Black Ops Royale. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w01-br-exotic-elim-1", "title": "W1: Black Ops Royale — Exotic weapon kill", "description": "Get 1 elimination with Exotic weapons in Black Ops Royale. Reward: 2,500 XP." },
-    { "id": "bo7wz-s3-w01-wz-longshot-3", "title": "W1: Warzone — Long Shot kills", "description": "Get 3 Long Shot kills. Reward: 2,500 XP." },
-
-    { "id": "bo7wz-s3-w02-wz-top10-10", "title": "W2: Warzone — Top 10 placements", "description": "Earn 10 Top 10 placements. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w02-wz-ar-elims-40", "title": "W2: Warzone — AR eliminations", "description": "Get 40 eliminations with Assault Rifles. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w02-br-perks-5x5", "title": "W2: Black Ops Royale — activate perks", "description": "In Black Ops Royale, activate 5 or more Perks in a single match 5 times. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w02-wz-killstreak-active-kills-5", "title": "W2: Warzone — kills while Killstreak active", "description": "Get 5 kills while your Killstreak is active. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w02-wz-headshots-single-match-2", "title": "W2: Warzone — headshots in one match", "description": "Get 2 headshots in a single match. Reward: 2,500 XP." },
-    { "id": "bo7wz-s3-w02-br-wingsuit-kills-3", "title": "W2: Black Ops Royale — Wingsuit follow-up kills", "description": "In Black Ops Royale, kill enemies shortly after using your Wingsuit 3 times. Reward: 2,500 XP." },
-
-    { "id": "bo7wz-s3-w03-wz-ads-kills-40", "title": "W3: Warzone — ADS kills", "description": "Get 40 kills while aiming down sights. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w03-wz-sniper-elims-10", "title": "W3: Warzone — sniper eliminations", "description": "Get 10 eliminations with Sniper Rifles. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w03-br-guild-robots-10", "title": "W3: Black Ops Royale — Guild Robots", "description": "In Black Ops Royale, eliminate 10 Guild Robots. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w03-br-perks-active-kills-3", "title": "W3: Black Ops Royale — kills with perks active", "description": "In Black Ops Royale, get 3 kills while you have Perks activated. Reward: 2,500 XP." },
-    { "id": "bo7wz-s3-w03-br-target-uplink-under120", "title": "W3: Black Ops Royale — fast Target Uplink", "description": "In Black Ops Royale, complete a Target Uplink in less than 120 seconds. Reward: 2,500 XP." },
-    { "id": "bo7wz-s3-w03-br-mangler-1", "title": "W3: Black Ops Royale — eliminate a Mangler", "description": "In Black Ops Royale, eliminate a Mangler. Reward: 2,500 XP." },
-
-    { "id": "bo7wz-s3-w04-br-cradle-zombies-50", "title": "W4: Black Ops Royale — zombies in Cradle Breaches", "description": "In Black Ops Royale, eliminate 50 Zombies in Cradle Breaches. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w04-br-upgrades-20", "title": "W4: Black Ops Royale — weapon upgrades", "description": "In Black Ops Royale, upgrade weapons 20 times. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w04-wz-pistol-elims-10", "title": "W4: Warzone — pistol eliminations", "description": "Get 10 eliminations with Pistols. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w04-wz-kill-tactical-affected-5", "title": "W4: Warzone — tactical follow-up kills", "description": "Kill an enemy that was recently affected by your Tactical 5 times. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w04-wz-buyback-or-revive-3", "title": "W4: Warzone — buy back or revive", "description": "Buy back or revive 3 players. Reward: 2,500 XP." },
-    { "id": "bo7wz-s3-w04-br-upgraded-armor-trauma", "title": "W4: Black Ops Royale — armor + Trauma Kit", "description": "In Black Ops Royale, have upgraded armor and a Trauma Kit active at the same time. Reward: 2,500 XP." },
-
-    { "id": "bo7wz-s3-w05-wz-first-circle-kills-10", "title": "W5: Warzone — first circle kills", "description": "Kill enemies during the first circle 10 times. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w05-wz-upgraded-weapon-elims-40", "title": "W5: Warzone — upgraded weapon eliminations", "description": "Get 40 eliminations with upgraded weapons. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w05-wz-open-15-caches-no-death-5", "title": "W5: Warzone — loot caches without dying", "description": "Open 15 Loot Caches without dying 5 times. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w05-wz-zombie-sniper-headshots-15", "title": "W5: Warzone — zombie sniper headshots", "description": "Headshot 15 Zombies with Sniper Rifles. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w05-wz-enemy-weapon-elims-5", "title": "W5: Warzone — enemy weapon eliminations", "description": "Get 5 eliminations using enemy weapons. Reward: 2,500 XP." },
-    { "id": "bo7wz-s3-w05-br-mangler-cradle-gas", "title": "W5: Black Ops Royale — Mangler in Cradle Gas", "description": "Eliminate a Mangler inside the Cradle Gas. Reward: 2,500 XP." },
-
-    { "id": "bo7wz-s3-w06-wz-grapple-followup-kills-10", "title": "W6: Warzone — grapple follow-up kills", "description": "Get 10 kills shortly after grappling. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w06-wz-3k-no-death-5", "title": "W6: Warzone — 3-kill streaks", "description": "Get 3 kills without dying 5 times. Reward: 5,000 XP." },
-    { "id": "bo7wz-s3-w06-wz-lmg-elims-15", "title": "W6: Warzone — LMG eliminations", "description": "Get 15 eliminations with LMGs. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w06-wz-lethal-damaged-enemy-kills-5", "title": "W6: Warzone — lethal follow-up kills", "description": "Kill an enemy that was recently damaged by your Lethal 5 times. Reward: 3,500 XP." },
-    { "id": "bo7wz-s3-w06-wz-killstreak-kill-1", "title": "W6: Warzone — kill with a Killstreak", "description": "Get a kill using a Killstreak. Reward: 2,500 XP." },
-    { "id": "bo7wz-s3-w06-br-open-mystery-box-cradle-gas", "title": "W6: Black Ops Royale — Mystery Box in Cradle Gas", "description": "Open a Mystery Box inside the Cradle Gas. Reward: 2,500 XP." }
+    {
+      "id": "bo7wz-s1-w02-core-elims-assault",
+      "title": "Core — assault rifle eliminations",
+      "description": "Get 30 eliminations with assault rifles in Battle Royale or Resurgence (replace with real text from this week’s in-game menu).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-core-placements",
+      "title": "Core — top placements",
+      "description": "Finish in the top 10 three times (example).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-bonus-headshots",
+      "title": "Bonus — precision",
+      "description": "Get 15 headshot eliminations (example).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-bonus-contracts",
+      "title": "Bonus — contracts",
+      "description": "Complete 8 contracts (example).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-ltm-rotator",
+      "title": "LTM — featured mode",
+      "description": "Play 5 matches in the featured playlist (rename when the LTM changes).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    },
+    {
+      "id": "bo7wz-s1-w02-challenge-weapon-blueprint",
+      "title": "Weapon challenge — featured gun",
+      "description": "Get 20 eliminations with [weapon name] using [build restrictions if any] (fill in from weekly UI).",
+      "endsAt": "2026-05-13T17:00:00.000Z"
+    }
   ],
   "weapons": []
 }
