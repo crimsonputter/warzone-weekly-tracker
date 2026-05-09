@@ -416,12 +416,17 @@ export default function App() {
               <div className="title-block">
                 <h1>Weekly challenges</h1>
                 <p className="sub">
-                  Pulled from your live manifest when configured. Bundled entry
-                  explains how to host JSON.
+                  {manifest.weeklyChallenges.length} loaded — use a{' '}
+                  <strong>Raw</strong> GitHub URL in Settings (or a normal blob
+                  link; the app converts it). If you only see one row, the live
+                  JSON did not load.
                 </p>
               </div>
             </header>
-            <div className="card" style={{ padding: '0.5rem 1rem' }}>
+            <div
+              className="card card--weeklies"
+              style={{ padding: '0.5rem 1rem' }}
+            >
               {manifest.weeklyChallenges.map((w) => (
                 <div key={w.id} className="week-item">
                   <input
@@ -429,7 +434,7 @@ export default function App() {
                     checked={Boolean(progress.weekly[w.id])}
                     onChange={(e) => setWeekly(w.id, e.target.checked)}
                   />
-                  <div>
+                  <div className="week-item__text">
                     <div style={{ fontWeight: 650 }}>{w.title}</div>
                     <div className="sub" style={{ marginTop: 4 }}>
                       {w.description}
@@ -468,10 +473,13 @@ export default function App() {
                   placeholder="https://…/bo7wz-manifest.json"
                 />
                 <p className="hint">
-                  Templates: <code>live-manifest.example.json</code> (full schema),{' '}
-                  <code>weekly-challenges.template.json</code> (season/week id pattern +
-                  sample weeklies). Use <code>weeklyChallenges[]</code> (and optional{' '}
-                  <code>weapons[]</code>) in your hosted JSON.
+                  Use the file’s <strong>Raw</strong> URL, e.g.{' '}
+                  <code>
+                    https://raw.githubusercontent.com/…/weekly-season3-week1-warzone.json
+                  </code>
+                  . A normal GitHub <em>blob</em> link is OK — it is converted
+                  automatically. Templates: <code>live-manifest.example.json</code>,{' '}
+                  <code>weekly-challenges.template.json</code>.
                 </p>
               </div>
               <div className="field">

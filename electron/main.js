@@ -44,16 +44,48 @@ ipcMain.handle('settings:save', (_, data) => {
   fs.writeFileSync(settingsPath(), JSON.stringify(data, null, 2), 'utf-8')
 })
 
+/** Turn a GitHub file page URL into a raw.githubusercontent.com JSON URL. */
+function normalizeManifestUrl(input) {
+  const s = String(input ?? '').trim()
+  if (!s) return s
+  try {
+    const u = new URL(s)
+    if (u.hostname !== 'github.com') return s
+    const parts = u.pathname.split('/').filter(Boolean)
+    if (parts.length < 5 || parts[2] !== 'blob') return s
+    const user = parts[0]
+    const repo = parts[1]
+    const branch = parts[3]
+    const filePath = parts.slice(4).join('/')
+    return `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${filePath}`
+  } catch {
+    return s
+  }
+}
+
 ipcMain.handle('manifest:fetch', async (_, url) => {
+  const resolved = normalizeManifestUrl(url)
   const controller = new AbortController()
   const t = setTimeout(() => controller.abort(), 25_000)
   try {
-    const res = await fetch(url, {
+    const res = await fetch(resolved, {
       signal: controller.signal,
-      headers: { Accept: 'application/json' },
+      headers: {
+        Accept: 'application/json, text/plain;q=0.9, */*;q=0.8',
+      },
     })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
-    return await res.json()
+    const text = (await res.text()).replace(/^\uFEFF/, '').trim()
+    if (text.startsWith('<')) {
+      throw new Error(
+        'Got a web page (HTML), not JSON. On GitHub open the file → Raw → copy that raw.githubusercontent.com URL into Settings.',
+      )
+    }
+    try {
+      return JSON.parse(text)
+    } catch {
+      throw new Error('Response was not valid JSON.')
+    }
   } finally {
     clearTimeout(t)
   }
